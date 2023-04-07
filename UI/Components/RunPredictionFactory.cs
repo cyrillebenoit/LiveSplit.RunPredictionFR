@@ -5,9 +5,9 @@ namespace LiveSplit.UI.Components
 {
     public class RunPredictionFactory : IComponentFactory
     {
-        public string ComponentName => "Run Prediction";
+        public string ComponentName => "Prédiction de la run";
 
-        public string Description => "Displays what the final run time would be if the run continues at the same pace as a set comparison.";
+        public string Description => "Affiche le chrono final si la run se déroule comme la comparaison actuelle.";
 
         public ComponentCategory Category => ComponentCategory.Information; 
 
