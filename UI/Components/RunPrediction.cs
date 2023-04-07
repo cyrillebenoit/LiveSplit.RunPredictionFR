@@ -123,17 +123,17 @@ namespace LiveSplit.UI.Components
             switch(comparison)
             {
                 case "Current Comparison":
-                    return "Current Pace";
+                    return "Pace Actuelle";
                 case Run.PersonalBestComparisonName:
-                    return "Current Pace";
+                    return "Pace Actuelle";
                 case BestSegmentsComparisonGenerator.ComparisonName:
-                    return "Best Possible Time";
+                    return "Meilleur Chrono Possible";
                 case WorstSegmentsComparisonGenerator.ComparisonName:
-                    return "Worst Possible Time";
+                    return "Pire Chrono Possible";
                 case AverageSegmentsComparisonGenerator.ComparisonName:
-                    return "Predicted Time";
+                    return "Chrono Prédit";
                 default:
-                    return "Current Pace (" + CompositeComparisons.GetShortComparisonName(comparison) + ")";
+                    return "Pace Actuelle (" + CompositeComparisons.GetShortComparisonName(comparison) + ")";
             }
         }
 
@@ -144,43 +144,43 @@ namespace LiveSplit.UI.Components
                 case "Current Comparison":
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Cur. Pace",
+                        "Pace Act.",
                         "Pace"
                     };
                     break;
                 case Run.PersonalBestComparisonName:
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Cur. Pace",
+                        "Pace Act.",
                         "Pace"
                     };
                     break;
                 case BestSegmentsComparisonGenerator.ComparisonName:
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Best Poss. Time",
-                        "Best Time",
-                        "BPT"
+                        "Meil. Chrono Poss.",
+                        "Meil. Chrono",
+                        "MCP"
                     };
                     break;
                 case WorstSegmentsComparisonGenerator.ComparisonName:
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Worst Poss. Time",
-                        "Worst Time"
+                        "Pire Chrono Poss.",
+                        "Pire Chrono"
                     };
                     break;
                 case AverageSegmentsComparisonGenerator.ComparisonName:
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Pred. Time",
+                        "Chrono Préd.",
                     };
                     break;
                 default:
                     InternalComponent.AlternateNameText = new []
                     {
-                        "Current Pace",
-                        "Cur. Pace",
+                        "Pace Actuelle",
+                        "Pace Act.",
                         "Pace"
                     };
                     break;
